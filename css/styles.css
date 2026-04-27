@@ -409,6 +409,56 @@ img {
   color: #f4f4fd;
 }
 
+.footer-input {
+  width: 264px;
+  height: 40px;
+  padding: 8px 16px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+
+  background-color: transparent;
+  color: #ffffff;
+
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-input::placeholder {
+  color: #ffffff;
+}
+.footer-input:focus {
+  border-color: #31d0aa;
+  outline: none;
+}
+.footer-btn {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  padding: 8px 24px;
+
+  background-color: #4d5ae5;
+  color: #ffffff;
+
+  border: none;
+  border-radius: 4px;
+
+  cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-btn:hover,
+.footer-btn:focus {
+  background-color: #31d0aa;
+}
+
 /* TEXT */
 .footer-text {
   max-width: 264px;
@@ -459,7 +509,6 @@ img {
   visibility: hidden;
   pointer-events: none;
 
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition:
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -552,10 +601,18 @@ img {
   height: 40px;
 
   padding-left: 38px;
-  border: 1px solid #8e8f99;
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
 
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input:focus {
+  outline: none;
+}
+
+.form-input {
+  outline: none;
 }
 
 .form-icon {
@@ -581,7 +638,7 @@ img {
   outline: none;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  border: 1px solid #8e8f99;
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   resize: none;
 }
@@ -590,7 +647,11 @@ img {
   border-color: #4d5ae5;
 }
 
-.visually-hidden {
+.form-textarea::placeholder {
+  color: rgba(46, 47, 66, 0.4);
+}
+
+/* .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -599,7 +660,7 @@ img {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
+} */
 
 .checkbox-label {
   display: flex;
@@ -612,7 +673,7 @@ img {
   width: 16px;
   height: 16px;
 
-  border: 1px solid #8e8f99;
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
 
   display: flex;
@@ -627,6 +688,7 @@ img {
 .checkbox-box svg {
   opacity: 0;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #f4f4fd;
 }
 
 /* .checkbox-input:checked + .checkbox-label .checkbox-box {
@@ -635,8 +697,8 @@ img {
 } */
 
 .checkbox-input:checked + .checkbox-label .checkbox-box {
-  background-color: #4d5ae5;
-  border-color: #4d5ae5;
+  background-color: #404bbf;
+  border-color: #404bbf;
 }
 
 .checkbox-input:checked + .checkbox-label .checkbox-box svg {
@@ -645,11 +707,7 @@ img {
 
 .modal-btn {
   display: block;
-  margin: 16px auto 0;
-
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
+  margin: 0 auto;
 
   min-width: 169px;
   height: 56px;
@@ -662,6 +720,8 @@ img {
 
   cursor: pointer;
 
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -669,8 +729,9 @@ img {
   fill: #fff;
 }
 
-.modal-btn:hover {
-  background: #404bbf;
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: #404bbf;
 }
 
 /* .input-wrapper:focus-within .form-icon {
@@ -695,25 +756,22 @@ img {
   gap: 24px;
 }
 
-.footer-input {
+/* .footer-input {
   width: 264px;
   height: 40px;
   padding: 8px 16px;
-  border: 1px solid #ffffff;
-  background: transparent;
-  color: #ffffff;
-  border-radius: 4px;
-}
 
-.footer-btn {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-
-  padding: 8px 24px;
-  background: #4d5ae5;
-  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+
+  background-color: transparent;
   color: #ffffff;
-  cursor: pointer;
-}
+
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+} */
