@@ -592,6 +592,7 @@ img {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
+  fill: #2e2f42;
 }
 
 .input-wrapper {
@@ -681,14 +682,13 @@ img {
   display: flex;
   align-items: center;
   gap: 8px;
-  cursor: pointer;
 
   font-size: 12px;
-  line-height: 1.17;
+  line-height: 1.16667;
   letter-spacing: 0.04em;
+
   color: #8e8f99;
 }
-
 .checkbox-box {
   width: 16px;
   height: 16px;
