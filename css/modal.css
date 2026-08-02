@@ -100,10 +100,6 @@
   color: #2e2f42;
 }
 
-.form-field {
-  margin-bottom: 8px;
-}
-
 .form-field:last-of-type {
   margin-bottom: 16px;
 }
@@ -137,12 +133,11 @@
   outline: transparent;
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.form-input {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .form-icon {
@@ -256,8 +251,7 @@
   min-width: 169px;
   height: 56px;
 
-  margin: 24px auto 0;
-
+  margin: 0 auto;
   border: none;
   border-radius: 4px;
 
