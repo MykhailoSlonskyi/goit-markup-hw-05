@@ -78,13 +78,13 @@
 
 .modal-close-btn:hover,
 .modal-close-btn:focus {
-  background-color: #404bbf;
-  border-color: #404bbf;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: var(--ocean);
 }
 
 .modal-close-btn:hover .modal-close-icon,
 .modal-close-btn:focus .modal-close-icon {
-  fill: #ffffff;
+  background: var(--ocean);
 }
 
 .modal-title {
@@ -122,6 +122,7 @@
 
 .input-wrapper {
   position: relative;
+  margin-bottom: 8px;
 }
 
 .form-input {
@@ -136,6 +137,12 @@
   outline: transparent;
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
 }
 
 .form-icon {
@@ -164,6 +171,7 @@
   height: 120px;
 
   padding: 8px 16px;
+  margin-bottom: 16px;
 
   resize: none;
 
@@ -240,28 +248,31 @@
 
 .policy-link {
   color: #4d5ae5;
+  text-decoration: underline;
 }
 
 .modal-submit-btn {
   display: block;
-
   min-width: 169px;
   height: 56px;
 
-  margin: 0 auto;
+  margin: 24px auto 0;
 
   border: none;
   border-radius: 4px;
 
   background-color: #4d5ae5;
-  color: #ffffff;
+  color: #fff;
 
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
 
   cursor: pointer;
+
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
