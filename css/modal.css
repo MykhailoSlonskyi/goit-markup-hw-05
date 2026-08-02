@@ -21,10 +21,8 @@
 
 .modal {
   position: absolute;
-
   top: 50%;
   left: 50%;
-
   transform: translate(-50%, -50%);
 
   width: 408px;
@@ -40,8 +38,6 @@
     0 1px 1px rgba(0, 0, 0, 0.14),
     0 1px 3px rgba(0, 0, 0, 0.12),
     0 2px 1px rgba(0, 0, 0, 0.2);
-
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-btn {
@@ -71,20 +67,24 @@
 }
 
 .modal-close-icon {
-  fill: #2e2f42;
-
+  fill: currentColor;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-btn {
+  color: #2e2f42;
 }
 
 .modal-close-btn:hover,
 .modal-close-btn:focus {
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  background: var(--ocean);
+  background-color: #404bbf;
+  border-color: #404bbf;
+  color: #ffffff;
 }
 
 .modal-close-btn:hover .modal-close-icon,
 .modal-close-btn:focus .modal-close-icon {
-  background: var(--ocean);
+  fill: #ffffff;
 }
 
 .modal-title {
